@@ -19,20 +19,6 @@ echo -e $divider
 echo -e $title_side_l$title$title_side_r
 echo -e $divider
 
-####    Arch    ####
-if cat /etc/os-release | grep "arch" &> /dev/null; then
-  os="Arch"
-fi
-
-####    Ubuntu    ####
-if cat /etc/os-release | grep "ubuntu" &> /dev/null; then
-  os="Ubuntu"
-fi
-####    Termux    ####
-if [ -d /data/data/com.termux ]; then
-  os="Termux"
-fi
-
 if uname -a | grep "arch1" &> /dev/null; then
   kernel="Arch"
 elif uname -a | grep "ubuntu" &> /dev/null; then
