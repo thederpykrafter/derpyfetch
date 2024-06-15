@@ -23,7 +23,7 @@ if uname -a | grep "arch1" &> /dev/null; then
   kernel="Arch"
 elif uname -a | grep "ubuntu" &> /dev/null; then
   kernel="Ubuntu"
-elif uname -a | grep "aarch" &> /dev/null; then
+elif uname -a | grep "Android" &> /dev/null; then
   kernel="Termux"
 elif uname -a | grep "PRoot" &> /dev/null; then
   kernel="PRoot"
