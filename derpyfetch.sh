@@ -10,10 +10,10 @@ bpurple="\e[95m"
 clr="\e[0m"
 
 ####    Title    ####
-title=$bpurple"TDK Fresh Install Script"$clr
+title=$bpurple"TDK ZSH"$clr
 title_side_l=$blue"#    "$clr
 title_side_r=$blue"    #"$clr
-divider=$blue"############################"$clr
+divider=$blue"###########"$clr
 
 echo -e $divider
 echo -e $title_side_l$title$title_side_r
@@ -29,5 +29,6 @@ elif uname -a | grep "PRoot" &> /dev/null; then
   kernel="PRoot"
 fi
 
-echo $os
-echo $kernel
+#NOTE not sure where previous new line is coming from
+echo -en $os
+echo -e $kernel
