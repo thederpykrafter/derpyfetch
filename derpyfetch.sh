@@ -20,13 +20,13 @@ echo -e $title_side_l$title$title_side_r
 echo -e $divider
 
 if uname -a | grep "arch1" &> /dev/null; then
-  kernel="Arch"
+	kernel="Arch"
 elif uname -a | grep "ubuntu" &> /dev/null; then
-  kernel="Ubuntu"
+	kernel="Ubuntu"
 elif uname -a | grep "Android" &> /dev/null; then
-  kernel="Termux"
+	kernel="Termux"
 elif uname -a | grep "PRoot" &> /dev/null; then
-  kernel="PRoot"
+	kernel="PRoot"
 fi
 
 #NOTE not sure where previous new line is coming from
